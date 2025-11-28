@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Title shown in the browser tab -->
+	<title>Resume</title>
+</head>
+<!-- Main content of the web page -->
+
+<body>
+	<!-- Table used for page layout -->
+	<table border="1px solid black" height="100%" width="100%" id="table">
+		<!-- Table header spanning 2 columns -->
+		<th colspan="2" style="height:10px" class="table-heading">
+			<div id="mypage-header">
+				<!-- Header section -->
+				<header>
+					<!-- Main heading -->
+					<h1 id="heading-1">Aravindkumar S</h1>
+				</header>
+			</div>
+		</th>
+		<!-- Table row for main content -->
+		<tr style="height:710px" class="table-row">
+			<!-- Left column of table -->
+			<td style="justify-items: start; vertical-align: top; width: 800px;" class="table-data">
+				<!-- Section for personal details -->
+				<section>
+					<!-- Sub-heading -->
+					<h2>Objectives:</h2>
+					<!-- Paragraph describing objective -->
+					<p>&nbsp; A youngster seeking an opportunity for employment with a good Logical, Technical and
+						Analytical skills. I'm a strong hearted person who can quickly adapt to any situation and
+						committed to show and grow my skills in future. To establish a long-term career in a company
+						where I can utilize my professional skills and knowledge to be an effective employee who wants
+						to give his part for the company's upliftment.</p>
+					<!-- Sub-heading -->
+					<h2>Technical skills:</h2>
+					<!-- Unordered list -->
+					<ul>
+						<!-- List items for skills -->
+						<li>
+							<p><strong>Programming Languages </strong>: Java (OOP, JDK, Collections, Exception),
+								Python(Basic), HTML, CSS, JavaScript.</p>
+						</li>
+						<li>
+							<p><strong>Databases & SQL Concepts</strong>: Oracle SQL, MySQL (DDL, DML, DCL, TCL, DQL,
+								Joins, Primary, Foreign Key).</p>
+						</li>
+						<li>
+							<p><strong>Frameworks & Libraries</strong>: React.js (Components, Hooks, State, Props),
+								Spring Boot, JDBC (Database Connectivity, CRUD Operations).</p>
+						</li>
+						<li>
+							<p><strong>Tools & Platforms</strong>: Postman, VS Code, Eclipse, GitHub.</p>
+						</li>
+					</ul>
+					<!-- Education section -->
+					<h2>Education:</h2>
+					<!-- Ordered list -->
+					<ol>
+						<li>
+							<p><b>Bachelor of Engineering (BE), EEE</b> - Meenakshi Sundararajan Engineering College.
+							</p>
+						</li>
+						<li>
+							<p><b>HSC -</b> C.E.O.A. Matriculation Higher Secondary School.</p>
+						</li>
+						<li>
+							<p><b>SSLC -</b> Sri Sundareswara Vidya Matriculation School.</p>
+						</li>
+					</ol>
+					<!-- Soft skills section -->
+					<h2>Soft Skills:</h2>
+					<ul>
+						<li>
+							<p>Problem solving.</p>
+						</li>
+						<li>
+							<p>Teamwork.</p>
+						</li>
+						<li>
+							<p>Adaptability.</p>
+						</li>
+					</ul>
+				</section>
+			</td>
+			<!-- Right column of table -->
+			<td style="vertical-align: top;" class="table-data">
+				<!-- Projects section -->
+				<h2>Projects:</h2>
+				<!-- Project 1 -->
+				<h4>Banking Application:</h4>
+				<ul>
+					<li>User Module: Manages user registration (CRUD), authentication, and associations with accounts
+						and loans.</li><br>
+					<li>Account Module: Handles account creation, balance management, and links accounts with
+						transactions.</li><br>
+					<li>Loan Module: Processes loan applications, approvals, and repayment tracking with date-based
+						updates.</li><br>
+					<li>Transaction Module: Records deposits, withdrawals, and transfers while maintaining transaction
+						history.</li>
+				</ul>
+				<!-- Project 2 -->
+				<h4>AI-Powered Email Writer:</h4>
+				<ul>
+					<li>Designed and developed a full-stack web application to generate email replies with selectable
+						tones (Professional, Friendly, Casual, Custom).</li><br>
+					<li>Implemented Spring Boot REST API to process user input, apply tone-based reply logic, and return
+						refined responses.</li><br>
+					<li>Ensured seamless integration between frontend and backend with proper API handling, validation,
+						and CORS configuration.</li>
+				</ul>
+				<!-- Certifications section -->
+				<h2>Certification:</h2>
+				<ul>
+					<li>Completed Java Full Stack Developer.</li><br>
+					<li>Certified in Python Programming (Basic).</li>
+				</ul>
+			</td>
+		</tr>
+		<!-- Table footer -->
+		<tr class="table-row">
+			<td colspan="2" class="table-data">
+				<!-- Footer section with contact info -->
+				<footer>
+					<div id="mypage-footer">
+						<p>Contact: <strong id="phone">9500917811</strong></p>
+						<p>Email Id: <strong>aravindkumar@gmail.com</strong></p>
+					</div>
+				</footer>
+			</td>
+		</tr>
+	</table>
+	<!-- JavaScript Practice Section -->
+	<div id="js-wrap">
+		<!-- Find Maximum of Two Numbers -->
+		<div id="js1-max">
+			<h1>Find Max of Two Numbers</h1>
+			<input type="number" id="inp-1" class="input-style" placeholder="number1">
+			<input type="number" id="inp-2" class="input-style" placeholder="number2">
+			<br><br>
+			<button type="button" class="btn-style"
+				onclick="max(document.getElementById('inp-1').value, document.getElementById('inp-2').value)">
+				Result
+			</button>
+			<br>
+			<h3 id="max1"></h3>
+		</div>
+		<!-- Reverse a String -->
+		<div id="js2-rev">
+			<h1>Reverse a String</h1>
+			<input type="text" placeholder="Enter text" class="input-style" id="inp-txt"><br><br>
+			<button onclick="reverse(document.getElementById('inp-txt').value)" class="btn-style">Reverse</button>
+			<div class="rev-div">
+				<h2 id="rev1"></h2>
+			</div>
+		</div>
+		<!-- Find Largest Word -->
+		<div id="js3-largestWord">
+			<h1>Find Largest Word</h1>
+			<input type="text" id="inp-str" class="input-style"><br><br>
+			<button onclick="showLargestWord()" class="btn-style">Largest Word</button>
+			<h3 id="heading3-largestWord"></h3>
+		</div>
+		<!-- Save Data in Cookies -->
+		<div id="js4-cookie">
+			<h1>Cookies</h1>
+			<input type="text" placeholder="Enter name" id="inp-cookieid1" class="input-style"><br><br>
+			<input type="number" placeholder="Enter phone number" id="inp-cookieid2" class="input-style"><br><br>
+			<button onclick="saveCookie()" class="btn-style">Save</button>
+		</div>
+	</div>
+	<!-- Link external JavaScript file -->
+	<script src="./exercise.js"></script>
+	<!-- Link external Jquery file -->
+	<script src="./jquery.js"></script>
+	<script src="https://code.jquery.com/ui/1.14.1/jquery-ui.min.js"></script>
+	<!-- Jquery Exercise-->
+	<script>
+		// style inputs and table
+		$(document).ready(function () {
+			$("input").css({ "background-color": "#FFFF88", "border": "none" });
+			$("table").css("border-color", "#FF1A00").css("color", "#CC0000");
+			//hide the footer
+			$("mypage-footer").hide();
+			//add references before footer
+			let references = `
+		<div id="references">
+			<h1>References</h1>
+			<ul>
+				<li>reference-1</li>
+				<li>reference-2</li>
+				<li>reference-3</li>
+			</ul>
+		</div>`;
+			$("#mypage-footer").before(references);
+			//header height is 10 px
+			$("#mypage-header").css({
+				"height": "10px",
+				"background-color": "yellow",
+				"overflow": "hidden"
+			});
+			//header when mouse enter change height increase
+			$("#mypage-header").mouseenter(function () {
+				$(this).css({ "height": "100px" });
+			});
+			//header when mouse leave change height 
+			$("#mypage-header").mouseleave(function () {
+				$(this).css({ "height": "10px" });
+			});
+			//footer slide down and give alert
+			$("#mypage-footer").hide().css("background-color", "blue").slideDown(10000, function () {
+				alert("slide down completed!");
+			});
+		});
+	</script>
+	<script src="./exercise.js"></script>
+</body>
+
+</html>
